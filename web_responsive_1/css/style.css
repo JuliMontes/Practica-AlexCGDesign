@@ -55,6 +55,10 @@ nav > a:hover {
     text-decoration: underline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header .textos-header {
     display: flex;
     height: 430px;
@@ -248,20 +252,33 @@ main .sobre-nosotros {
     text-align: justify;
 }
 
+.wave-foo {
+    position: absolute;
+    bottom: 0.5;
+    width: 100%;
+}
+
 /* footer */
 
 footer {
     background: #414141;
-    padding: 60Px 0 30px 0;
+    padding: 0 0 30px 0;
     margin: auto;
     overflow: hidden;
+}
+
+.wave-footer {
+    position: absolute;
+    bottom: 1;
+    width: 100%;
 }
 
 .contenedor-footer {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
-    margin: auto;
+    margin: 60px auto auto auto;
+    padding-top: 60px;
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;
 }
