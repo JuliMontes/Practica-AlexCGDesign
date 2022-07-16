@@ -347,4 +347,9 @@ footer {
     .servicio-ind:nth-child(1), .servicio-ind:nth-child(2) {
         margin-bottom: 60px;
     }
+
+    .servicio-ind img {
+        width: 90%;
+    }
 }
+
