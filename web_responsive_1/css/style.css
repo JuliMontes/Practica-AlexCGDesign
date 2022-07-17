@@ -256,7 +256,6 @@ main .sobre-nosotros {
 
 .contacto {
     background: #fff;
-    padding-bottom: 30px;
 }
 
 .contacto-cont {
@@ -301,6 +300,8 @@ main .sobre-nosotros {
     font-weight: 400;
     font-size: 20px;
     text-decoration: none;
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .redes-contacto > a:hover {
@@ -308,9 +309,26 @@ main .sobre-nosotros {
 }
 
 .redes-contacto i {
-    margin-right: 2px;
-    width: 32px;
-    height: 32px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #414141;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+
+.redes-contacto .fa-telegram {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+    background: #fff;
+    color: #414141;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
 }
 
 /* footer */
@@ -355,11 +373,48 @@ footer {
     color: #ccc;
 }
 
+.titulo-final-cont {
+    display: flex;
+    justify-content: center;
+}
+
 .titulo-final {
     text-align: center;
     font-size: 24px;
     margin: 100px 0 0 0;
     color: #9e9797;
+    z-index: 1;
+}
+
+.titulo-final-cont > a {
+    color: #9e9797;
+    text-decoration: none;
+    padding-left: 10px;
+    z-index: 1;
+}
+
+.titulo-final-cont > a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+
+.boton-con {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+}
+
+.btn-mas a{
+    display: block;
+    text-decoration: none;
+    background: #af20d3;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
 }
 
 /* Responsive 500 */
@@ -428,6 +483,27 @@ footer {
     .servicio-ind img {
         width: 90%;
     }
+
+    .servicio-ind p {
+        text-align: center;
+    }
+
+    /* Footer */
+
+    .titulo-final-cont {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .titulo-final {
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .titulo-final-cont > a {
+        padding-left: 0;
+        padding-right: 30px;
+    }
 }
 
 /* Responsive 250 */
@@ -483,8 +559,31 @@ footer {
         text-align: center;
     }
     
+/* Contact */
+
+.contacto-cont {
+    flex-direction: column;
+}
+
+.contacto .contenedor > p {
+    text-align: justify;
+}
+
+.datos-contacto {
+    margin-bottom: 20px;
+}
+
+.contacto-ind {
+    border-bottom: 3px solid #af20d3;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
     /* Footer */
 
+    footer {
+        height: 200px;
+    }
     .contenedor-footer {
         flex-direction: column;
         border: none;
@@ -506,6 +605,15 @@ footer {
     }
 
     .titulo-final {
-        font-size: 20px;
+        width: 85%;
+        font-size: 16px;
+        text-align: center;
+        margin: 100px 0 0 0;
     }
+
+    .titulo-final-cont > a {
+        padding-left: 0;
+        padding-right: 40px;
+    }
+
 }
