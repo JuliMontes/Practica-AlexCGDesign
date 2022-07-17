@@ -289,6 +289,18 @@ main .sobre-nosotros {
     margin-bottom: 20px;
 }
 
+.contacto-ind a {
+    color: #414141;
+    font-weight: 400;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.contacto-ind a:hover {
+    text-decoration: underline;
+}
+
 .redes-contacto {
     display: flex;
     flex-direction: column;
@@ -604,8 +616,12 @@ footer {
         padding-bottom: 20px;
     }
 
+    .titulo-final-cont {
+        width: 75%;
+    }
+
     .titulo-final {
-        width: 85%;
+        width: 80%;
         font-size: 16px;
         text-align: center;
         margin: 100px 0 0 0;
@@ -613,7 +629,7 @@ footer {
 
     .titulo-final-cont > a {
         padding-left: 0;
-        padding-right: 40px;
+        padding-right: 0px;
     }
 
 }
